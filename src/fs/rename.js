@@ -1,5 +1,7 @@
+import {rename as kek}  from 'node:fs/promises'
 const rename = async () => {
-    // Write your code here 
+    kek("./files/wrongFilename.txt",'./files/properFilename.md')
+        .catch(err => console.error('FS operation failed'))
 };
 
 await rename();
