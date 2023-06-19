@@ -1,7 +1,7 @@
 import {cp} from 'node:fs/promises'
 
 const copy = async () => {
-    cp('files', 'foles_copy',
+    cp('files', 'files_copy',
         {
             recursive: true,
             errorOnExist:true,
