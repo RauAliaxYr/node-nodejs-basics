@@ -1,5 +1,10 @@
 const parseArgs = () => {
-    // Write your code here 
-};
+let arr = process.argv
+    arr.forEach(item => {
+        if (item.includes("--")){
+            console.log(item +" is " + arr[arr.indexOf(item)+1])
+        }
+    })
+}
 
 parseArgs();
